@@ -2,7 +2,19 @@ from flask import Flask, render_template, request, redirect
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-import os
+import os 
+
+from flask import Flask, render_template, request, redirect
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('formulario.html')
+
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5000))  # Usa el puerto de Render, o 5000 por defecto
+    app.run(host='0.0.0.0', port=port)
 
 app = Flask(__name__)
 
