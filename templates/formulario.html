@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Mantenimiento Locativo</title>
+</head>
+<body>
+    <h1>Registrar Solicitud de Mantenimiento Locativo</h1>
+    <form action="/enviar" method="POST">
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre" required><br><br>
+        
+        <label>Cargo:</label><br>
+        <input type="text" name="cargo" required><br><br>
+        
+        <label>Teléfono:</label><br>
+        <input type="text" name="telefono" required><br><br>
+        
+        <label>Cédula:</label><br>
+        <input type="text" name="cedula" required><br><br>
+        
+        <label>Secretaría:</label><br>
+        <input type="text" name="secretaria" required><br><br>
+        
+        <label>Dependencia:</label><br>
+        <input type="text" name="dependencia" required><br><br>
+        
+        <label>Fecha:</label><br>
+        <input type="date" name="fecha" required><br><br>
+        
+        <label>Lugar del servicio:</label><br>
+        <input type="text" name="lugar" required><br><br>
+        
+        <label>Descripción:</label><br>
+        <textarea name="descripcion" required></textarea><br><br>
+        
+        <button type="submit">Enviar Solicitud</button>
+    </form>
+</body>
+</html>
