@@ -38,7 +38,7 @@ def enviar():
     # Crear el mensaje de correo
     mensaje = Message(
         "Nueva solicitud de mantenimiento",  # Asunto del correo
-        recipients=['mtto.logisticasa.com']  # Correo al que se enviará (ajusta este correo)
+        recipients=['mtto.logisticasa@gmail.com']  # Correo al que se enviará (ajusta este correo)
     )
 
     # Contenido del correo
